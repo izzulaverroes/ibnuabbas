@@ -20,7 +20,7 @@
 html {
       background-color: var(--gray);
       scroll-behavior: smooth;
-      scroll-padding-top: 85px;
+
 }
 .container {
       width: 85%;
@@ -121,6 +121,7 @@ nav ul li a:hover {
             url(https://s3-alpha-sig.figma.com/img/760f/7eef/a1f4918396463f413e9a9bc9627ac108?Expires=1698624000&Signature=XdZBucRvVQUY-Cbf6~JadElNJJpa48GQAU6INf2ezwvPhpRon~pJmv4oAfAvRCLPd8t1m7uYAhDUi3RQuJ3VLviN6lYojGY1Sq12hqgE1Byjp5Nau6opi4rfsGnmaRlih8y1qvQlTCPfVlZPaRhibrXkWWmD48GIFtUIqjiWod4tIV5mRnhEadTmUAbfUAIECH2kP5VXrlVHSaScGR~BcxaB68MnEH6YWycfIt0z8BMAp6w5kKTDINOELtw4WcaY-FmAZhx0fc5vrOHsAyFYxro-tMvI6ErsjxB6jz2lkdIlFM0tSv1pUcF-0NQnIO7lpQBqC0wsOq9B1ZfSS4WhOQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
       background-size: cover;
       background-position: center;
+      background-attachment: fixed;
       width: 100%;
       height: 100vh;
       position: absolute;
@@ -133,7 +134,7 @@ nav ul li a:hover {
 }
 .title {
       margin: auto;
-      margin-top: 80px;
+      margin-top: 50px;
 }
 .title h1 {
       font-size: 8vw;
@@ -143,7 +144,7 @@ nav ul li a:hover {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 30px;
-      margin-top: 40px;
+      margin-top: 20px;
 }
 .cta-item {
       display: flex;
@@ -156,8 +157,11 @@ nav ul li a:hover {
 }
 .cta-item a {
       color: var(--gray);
+      transition: var(--transition);
 }
-
+.desc a:hover{
+      color: var(--blueGray);
+}
 .des {
       width: 100%;
       display: grid;
@@ -180,15 +184,15 @@ nav ul li a:hover {
       color: var(--darktext);
 }
 .center-title hr {
-      border: 2.9px var(--blue) solid;
-      width: 20vw;
+      width: 200px;
       margin: auto;
-      margin-top: 10px;
+      margin-bottom: 10px;
       border-radius: 100px;
       min-width: 230px;
 }
 .about {
       margin: 8vw 0;
+      scroll-padding-top: 4em;
 }
 
 .program {
@@ -198,7 +202,7 @@ nav ul li a:hover {
 .program-grid {
       padding: 60px 0 60px 0;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       flex-flow: wrap;
       display: flex;
       justify-content: space-evenly;
@@ -206,7 +210,7 @@ nav ul li a:hover {
 .program-item {
       background-color: var(--gray);
       padding: 20px;
-      width: 350px;
+      width: 300px;
       margin: 25px;
 }
 
