@@ -20,7 +20,6 @@
 html {
       background-color: var(--gray);
       scroll-behavior: smooth;
-
 }
 .container {
       width: 85%;
@@ -42,6 +41,7 @@ html {
       font-weight: 500;
       position: fixed;
       z-index: 10000;
+      box-shadow: 4px 4px 9px 0px #00000040;
 }
 
 .nav-logo img {
@@ -154,12 +154,13 @@ nav ul li a:hover {
       background-color: var(--dark);
       padding: 30px 20px;
       border-radius: 10px;
+      box-shadow: 4px 4px 9px 0px #00000040;
 }
 .cta-item a {
       color: var(--gray);
       transition: var(--transition);
 }
-.desc a:hover{
+.desc a:hover {
       color: var(--blueGray);
 }
 .des {
@@ -212,6 +213,7 @@ nav ul li a:hover {
       padding: 20px;
       width: 300px;
       margin: 25px;
+      box-shadow: 4px 4px 9px 0px #00000040;
 }
 
 .contact {
@@ -238,6 +240,7 @@ nav ul li a:hover {
       border-radius: 10px;
       margin: auto;
       transition: var(--transition);
+      box-shadow: 4px 4px 9px 0px #00000040;
 }
 .contact-grid form textarea {
       width: 90%;
@@ -256,7 +259,17 @@ nav ul li a:hover {
       background-color: var(--blue);
       border-style: none;
       color: var(--gray);
+      cursor: pointer;
+      transition: var(--transition);
 }
+.contact-grid form button:hover{
+      background-color: var(--darkBlue);
+      transform: scale(1.02);
+}
+.contact-grid form button:active{
+      transform: scale(.97);
+}
+
 .contact-grid iframe {
       width: 90%;
       height: 100%;
@@ -264,7 +277,6 @@ nav ul li a:hover {
       border-style: none;
       border-radius: 10px;
       min-height: 400px;
-
 }
 .contact-grid form textarea::placeholder {
       color: var(--darktext);
@@ -280,40 +292,42 @@ nav ul li a:hover {
       outline: #00c8ff 3px solid;
 }
 
-footer{
+footer {
       background-color: var(--dark);
       color: var(--gray);
-
 }
 
-.footer-grid-top{
+.footer-grid-top {
       padding: 50px;
       display: grid;
-      grid-template-columns: 1.5fr 1fr;
-      gap: 5vw;
+      grid-template-columns: 3fr 1fr;
+
 }
-.footer-grid-top div:nth-child(1){
+.footer-grid-top div:nth-child(1) {
       display: flex;
+      width: 60%;
 }
-.footer-grid-top div:nth-child(1)>img{
+.footer-grid-top div:nth-child(1) > img {
       width: 160px;
       height: 160px;
       aspect-ratio: 1/1;
       margin: auto;
-      margin-right: 20px;
+      margin-right: 30px;
 }
-
-.sosmed ul{
+.footer-grid-top div:nth-child(2) {
+      justify-content: end;
+}
+.sosmed ul {
       display: flex;
       gap: 2vw;
-      margin-top: 30px;
+      margin-top: 20px;
       font-size: large;
 }
-.footer-grid-top div:nth-child(2) ul li a{
+.footer-grid-top div:nth-child(2) ul li a {
       color: var(--gray);
       transition: var(--transition);
 }
-.footer-grid-top div:nth-child(2) ul li a:hover{
+.footer-grid-top div:nth-child(2) ul li a:hover {
       color: var(--blueGray);
 }
 
@@ -321,9 +335,10 @@ footer{
       .burger {
             display: flex;
       }
-      .footer-grid-top{
+      .footer-grid-top {
             padding: 10px;
             padding-top: 50px;
+            gap: 30px;
       }
       nav ul {
             flex-direction: column;
@@ -366,17 +381,16 @@ footer{
             grid-template-columns: 1fr;
             gap: 20px;
       }
-      .contact-grid form{
+      .contact-grid form {
             order: 2;
-      } 
-      .footer-grid-top{
+      }
+      .footer-grid-top {
             grid-template-columns: 1fr;
       }
-      .sosmed ul{
-      gap: 4vw;
-
+      .sosmed ul {
+            gap: 4vw;
       }
-      .footer-grid-top div:nth-child(1)>img{
+      .footer-grid-top div:nth-child(1) > img {
             display: none;
       }
 }
