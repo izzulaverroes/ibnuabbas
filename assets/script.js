@@ -16,8 +16,9 @@ document.addEventListener('click',function(e){
         document.querySelector('.burger span:nth-child(4)').classList.remove('x3')
     }
 })
+// Count Animation
 let valueDisplays = document.querySelectorAll(".num");
-let interval = 4000;
+let interval = 90000;
 
 valueDisplays.forEach((valueDisplay) => {
   let startValue = 0;

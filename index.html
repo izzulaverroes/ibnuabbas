@@ -21,8 +21,10 @@
     <link rel="shortcut icon"
         href="https://s3-alpha-sig.figma.com/img/77be/4974/66243624295027cac6fc6e15e8a53ef6?Expires=1698624000&Signature=OJqIWCBpV8rbCXkHJyPlGmLCz1gAVGo7TpGHfiVLLU-PE-dwKGerODIyNAHITpYyCAvzmGKwVQ7RlaDQ2udG3DAahhWl3TdnXTlr23upgyo6dNWGz7hny~lkSleYG8rcnlmaps37Op58WeXTRp3oUKHmeWbt6IisXZsTPG8G6yN5E3LbXTgKzP75uYHN00U3cNI3XDkHgx1oFo4JyRTewHJmWHBBtV1sh4VLrD953zs5~oorGxoC9f3RspcFmEo9~~GzYP7NoGWXL-SqbZUPQfo0~iIw13ZqJQFiWXIvDnKF40pYupkM8YsfylfH80LM-7TizGguMA~B-6wfbpoT1A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
         type="image/x-icon">
-    <!-- ? Swiper JS -->
+    <!-- ? Swiper.js CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!--? AOS Style -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Ibnu Abbas | Malang</title>
 </head>
 
@@ -60,7 +62,7 @@
     <!-- HOME -->
     <section class="home" id="home">
         <div class="img"></div>
-        <div class="container">
+        <div class="container" data-aos="fade-up" data-aos-delay="500" data-aos-duration="500" data-aos-once="true">
             <div class="title">
                 <h1>&emsp;GAK MONDOK <br>&emsp;&emsp;&emsp; GAK <span
                         style="background-color: var(--blue);color: var(--gray); padding: 0px 20px;">KEREN</span> </h1>
@@ -106,13 +108,13 @@
     <!-- TENTANG KAMI -->
     <section class="about" id="about">
         <div class="container">
-            <div class="center-title">
+            <div class="center-title" data-aos="fade-right" data-aos-delay="500" data-aos-once="true">
                 <hr style="border: 2.5px var(--blue) solid; max-width: 100px; min-width: 70px;">
                 <h1>TENTANG <span
                         style="background-color: var(--blue);color: var(--gray); padding: 0px 6px;">KAMI</span></h1>
 
             </div>
-            <div class="des">
+            <div class="des" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="500" data-aos-easing="ease-in-out"data-aos-once="true">
                 <p>&emsp;&emsp; Ibnu Abbas merupakan salah satu sekolah menengah yang berada di Malang, provinsi Jawa
                     Timur. Adapun Nomor
                     pokok sekolah nasional (NPSN) untuk IBNU ABBAS ini adalah 20570899.
@@ -131,7 +133,7 @@
     <!-- USTADZ -->
     <section class="ustadz">
         <!-- <div class="ustd-bg"></div> -->
-        <div class="ustd-box">
+        <div class="ustd-box" data-aos="fade-right" data-aos-delay="1000" data-aos-once="true">
             <div class="ustd-title">
                 <h1>MUDIR IBNU ABBAS</h1>
             </div>
@@ -152,7 +154,7 @@
     </section>
     <!-- USTADZ END-->
     <!-- PROGRAM -->
-    <section class="mapel">
+    <section class="mapel" data-aos="slide-left" data-aos-delay="1000" data-aos-duration="500" data-aos-once="true">
         <div class="container">
             <!-- Slider main container -->
             <div class="swiper mySwiper2">
@@ -164,31 +166,37 @@
                                 style="--fa-primary-color: #146c94; --fa-secondary-color: #146c94;"></i>
                         </div>
                         <div class="mapel-des">
-                            <h2 class="num" style="margin: 20px 0 0 0;color: var(--blue);opacity: .6; font-size: xx-large;" data-val="210">000</h2>
+                            <h2 class="num"
+                                style="margin: 20px 0 0 0;color: var(--blue);opacity: .6; font-size: xx-large;"
+                                data-val="210">000</h2>
                             <h1 style="color: var(--dark);opacity: .9;">Total <br>Santri</h1>
                         </div>
                     </div>
                     <!-- DINIYYAH END -->
                     <!-- UMUM -->
-                    <div class="swiper-slide"  style="text-align: center;">
+                    <div class="swiper-slide" style="text-align: center;">
                         <div>
                             <i class="fa-duotone fa-person-praying fa-6x"
                                 style="--fa-primary-color: #146c94; --fa-primary-opacity: 1; --fa-secondary-color: #146c94; --fa-secondary-opacity: .7;"></i>
                         </div>
                         <div class="mapel-des">
-                            <h2 class="num" style="margin: 20px 0 0 0;color: var(--blue);opacity: .6; font-size: xx-large;" data-val="38">000</h2>
+                            <h2 class="num"
+                                style="margin: 20px 0 0 0;color: var(--blue);opacity: .6; font-size: xx-large;"
+                                data-val="38">000</h2>
                             <h1 style="color: var(--dark);opacity: .9;">Santri <br>Aktif</h1>
                         </div>
                     </div>
                     <!-- UMUM END -->
                     <!-- DIGITAL -->
-                    <div class="swiper-slide"  style="text-align: center;">
+                    <div class="swiper-slide" style="text-align: center;">
                         <div>
                             <i class="fa-duotone fa-user-graduate fa-6x"
                                 style="--fa-primary-color: #146c94; --fa-secondary-color: #146c94;"></i>
                         </div>
                         <div class="mapel-des">
-                            <h2 class="num" style="margin: 20px 0 0 0;color: var(--blue);opacity: .6; font-size: xx-large;" data-val="180">000</h2>
+                            <h2 class="num"
+                                style="margin: 20px 0 0 0;color: var(--blue);opacity: .6; font-size: xx-large;"
+                                data-val="180">000</h2>
                             <h1 style="color: var(--dark);opacity: .9;">Alumni <br>Santri</h1>
                         </div>
                     </div>
@@ -198,10 +206,12 @@
                         <div>
                             <i class="fa-duotone fa-clock fa-6x"
                                 style="--fa-primary-color: #146c94; --fa-secondary-color: #146c94;"></i>
-                                <div class="mapel-des">
-                                    <h2 class="num" style="margin: 20px 0 0 0;color: var(--blue);opacity: .6; font-size: xx-large;" data-val="12">000</h2>
-                                    <h1 style="color: var(--dark); opacity: .9;">Tahun<br>Mengajar</h1>
-                                </div>
+                            <div class="mapel-des">
+                                <h2 class="num"
+                                    style="margin: 20px 0 0 0;color: var(--blue);opacity: .6; font-size: xx-large;"
+                                    data-val="12">000</h2>
+                                <h1 style="color: var(--dark); opacity: .9;">Tahun<br>Mengajar</h1>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -214,7 +224,7 @@
                 <h1 style="color: var(--gray);">PROGRAM</h1>
             </div>
             <div class="program-grid">
-                <div class="program-item">
+                <div class="program-item" data-aos="fade-up" data-aos-delay="500" data-aos-once="true">
                     <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58" fill="none">
                         <path
                             d="M29 58C21.3087 58 13.9325 54.9447 8.4939 49.5061C3.05535 44.0675 0 36.6913 0 29C0 21.3087 3.05535 13.9325 8.4939 8.4939C13.9325 3.05535 21.3087 0 29 0C36.6913 0 44.0675 3.05535 49.5061 8.4939C54.9447 13.9325 58 21.3087 58 29C58 36.6913 54.9447 44.0675 49.5061 49.5061C44.0675 54.9447 36.6913 58 29 58ZM51.475 34.8C52.456 30.9956 52.456 27.0044 51.475 23.2H40.397C40.6658 27.062 40.6658 30.938 40.397 34.8H51.475ZM49.097 40.6H39.759C39.2733 44.0955 38.3476 47.5156 37.004 50.779C42.0985 48.8997 46.3761 45.2991 49.097 40.6ZM23.432 34.8H34.568C34.8828 30.9397 34.8828 27.0603 34.568 23.2H23.432C23.1172 27.0603 23.1172 30.9397 23.432 34.8ZM24.157 40.6C25.346 47.56 27.434 52.2 29 52.2C30.566 52.2 32.654 47.56 33.843 40.6H24.157ZM6.525 34.8H17.603C17.3343 30.938 17.3343 27.062 17.603 23.2H6.525C5.544 27.0044 5.544 30.9956 6.525 34.8ZM8.903 40.6C11.6239 45.2991 15.9015 48.8997 20.996 50.779C19.778 47.995 18.85 44.515 18.241 40.6H8.903ZM49.097 17.4C46.3761 12.7009 42.0985 9.1003 37.004 7.221C38.222 10.005 39.15 13.485 39.759 17.4H49.097ZM24.157 17.4H33.843C32.654 10.44 30.566 5.8 29 5.8C27.434 5.8 25.346 10.44 24.157 17.4ZM8.903 17.4H18.241C18.821 13.485 19.778 10.005 20.996 7.221C15.9015 9.1003 11.6239 12.7009 8.903 17.4Z"
@@ -225,7 +235,7 @@
                         quaerat voluptas, facilis cumque tempore provident perspiciatis
                         corporis?.</p>
                 </div>
-                <div class="program-item">
+                <div class="program-item" data-aos="fade-up" data-aos-delay="600" data-aos-once="true">
                     <svg xmlns="http://www.w3.org/2000/svg" width="55" height="50" viewBox="0 0 55 50" fill="none">
                         <path
                             d="M54.496 3.16494C54.8187 2.81726 55 2.34569 55 1.85398C55 1.36227 54.8187 0.890707 54.496 0.543018C54.1733 0.195329 53.7355 7.327e-09 53.2791 0C52.8227 -7.327e-09 52.385 0.195329 52.0623 0.543018L46.4044 6.64233L44.1839 4.2463C43.8612 3.89861 43.4235 3.70328 42.9671 3.70328C42.5107 3.70328 42.073 3.89861 41.7502 4.2463C41.4275 4.59399 41.2462 5.06556 41.2462 5.55727C41.2462 6.04897 41.4275 6.52054 41.7502 6.86823L45.1876 10.5715C45.3472 10.744 45.5369 10.8808 45.7457 10.9741C45.9545 11.0675 46.1784 11.1155 46.4044 11.1155C46.6305 11.1155 46.8543 11.0675 47.0631 10.9741C47.2719 10.8808 47.4616 10.744 47.6212 10.5715L54.496 3.16494ZM2.57802 3.70562C1.89429 3.70562 1.23856 3.99825 0.755085 4.51912C0.271612 5.04 0 5.74646 0 6.48309C0 7.21972 0.271612 7.92618 0.755085 8.44705C1.23856 8.96793 1.89429 9.26055 2.57802 9.26055H31.7956C32.4794 9.26055 33.1351 8.96793 33.6186 8.44705C34.102 7.92618 34.3736 7.21972 34.3736 6.48309C34.3736 5.74646 34.102 5.04 33.6186 4.51912C33.1351 3.99825 32.4794 3.70562 31.7956 3.70562H2.57802ZM2.57802 22.222C1.89429 22.222 1.23856 22.5147 0.755085 23.0355C0.271612 23.5564 0 24.2629 0 24.9995C0 25.7361 0.271612 26.4426 0.755085 26.9635C1.23856 27.4843 1.89429 27.777 2.57802 27.777H31.7956C32.4794 27.777 33.1351 27.4843 33.6186 26.9635C34.102 26.4426 34.3736 25.7361 34.3736 24.9995C34.3736 24.2629 34.102 23.5564 33.6186 23.0355C33.1351 22.5147 32.4794 22.222 31.7956 22.222H2.57802ZM0 43.5159C0 42.7793 0.271612 42.0728 0.755085 41.552C1.23856 41.0311 1.89429 40.7385 2.57802 40.7385H31.7956C32.4794 40.7385 33.1351 41.0311 33.6186 41.552C34.102 42.0728 34.3736 42.7793 34.3736 43.5159C34.3736 44.2526 34.102 44.959 33.6186 45.4799C33.1351 46.0008 32.4794 46.2934 31.7956 46.2934H2.57802C1.89429 46.2934 1.23856 46.0008 0.755085 45.4799C0.271612 44.959 0 44.2526 0 43.5159ZM47.6212 30.9396L54.496 23.533C54.8187 23.1853 55 22.7138 55 22.222C55 21.7303 54.8187 21.2588 54.496 20.9111C54.1733 20.5634 53.7355 20.3681 53.2791 20.3681C52.8227 20.3681 52.385 20.5634 52.0623 20.9111L46.4044 27.0104L44.1839 24.6144C43.8612 24.2667 43.4235 24.0714 42.9671 24.0714C42.5107 24.0714 42.073 24.2667 41.7502 24.6144C41.4275 24.9621 41.2462 25.4336 41.2462 25.9253C41.2462 26.417 41.4275 26.8886 41.7502 27.2363L45.1876 30.9396C45.3472 31.112 45.5369 31.2488 45.7457 31.3422C45.9545 31.4355 46.1784 31.4836 46.4044 31.4836C46.6305 31.4836 46.8543 31.4355 47.0631 31.3422C47.2719 31.2488 47.4616 31.112 47.6212 30.9396ZM54.496 42.0494L47.6212 49.456C47.4616 49.6284 47.2719 49.7653 47.0631 49.8586C46.8543 49.9519 46.6305 50 46.4044 50C46.1784 50 45.9545 49.9519 45.7457 49.8586C45.5369 49.7653 45.3472 49.6284 45.1876 49.456L41.7502 45.7527C41.4275 45.405 41.2462 44.9335 41.2462 44.4418C41.2462 43.9501 41.4275 43.4785 41.7502 43.1308C42.073 42.7831 42.5107 42.5878 42.9671 42.5878C43.4235 42.5878 43.8612 42.7831 44.1839 43.1308L46.4044 45.5268L52.0623 39.4275C52.385 39.0798 52.8227 38.8845 53.2791 38.8845C53.7355 38.8845 54.1733 39.0798 54.496 39.4275C54.8187 39.7752 55 40.2468 55 40.7385C55 41.2302 54.8187 41.7017 54.496 42.0494Z"
@@ -236,7 +246,7 @@
                         quaerat voluptas, facilis cumque tempore provident perspiciatis
                         corporis?.</p>
                 </div>
-                <div class="program-item">
+                <div class="program-item" data-aos="fade-up" data-aos-delay="700" data-aos-once="true">
                     <svg xmlns="http://www.w3.org/2000/svg" width="73" height="68" viewBox="0 0 73 68" fill="none">
                         <path
                             d="M9.38462 9.38464H4.46154C3.10207 9.38464 2 10.4867 2 11.8462V63.5385C2 64.898 3.10207 66 4.46154 66H9.38462C10.7441 66 11.8462 64.898 11.8462 63.5385V11.8462C11.8462 10.4867 10.7441 9.38464 9.38462 9.38464Z"
@@ -258,7 +268,7 @@
                         quaerat voluptas, facilis cumque tempore provident perspiciatis
                         corporis?.</p>
                 </div>
-                <div class="program-item">
+                <div class="program-item" data-aos="fade-up" data-aos-delay="800" data-aos-once="true">
                     <svg xmlns="http://www.w3.org/2000/svg" width="60" height="54" viewBox="0 0 60 54" fill="none">
                         <path
                             d="M42.0512 3.38889C43.5005 4.25308 44.6996 5.4748 45.5318 6.93514C46.364 8.39547 46.8009 10.0447 46.8 11.7222C46.8009 13.3998 46.364 15.049 45.5318 16.5093C44.6996 17.9696 43.5005 19.1914 42.0512 20.0556M58 52V50.3333C58 44.1111 58 41 56.7792 38.6222C55.7054 36.5316 53.9921 34.8319 51.8848 33.7667M23 21.4444C24.287 21.4444 25.5613 21.193 26.7503 20.7044C27.9393 20.2158 29.0196 19.4997 29.9296 18.5969C30.8397 17.6941 31.5615 16.6223 32.054 15.4428C32.5465 14.2632 32.8 12.999 32.8 11.7222C32.8 10.4455 32.5465 9.18124 32.054 8.00169C31.5615 6.82213 30.8397 5.75037 29.9296 4.84757C29.0196 3.94478 27.9393 3.22865 26.7503 2.74006C25.5613 2.25147 24.287 2 23 2C20.4009 2 17.9082 3.0243 16.0704 4.84757C14.2325 6.67084 13.2 9.14373 13.2 11.7222C13.2 14.3007 14.2325 16.7736 16.0704 18.5969C17.9082 20.4201 20.4009 21.4444 23 21.4444ZM2 50.3333V52H44V50.3333C44 44.1111 44 41 42.7792 38.6222C41.7054 36.5316 39.9921 34.8319 37.8848 33.7667C35.488 32.5556 32.352 32.5556 26.08 32.5556H19.92C13.648 32.5556 10.512 32.5556 8.1152 33.7667C6.00788 34.8319 4.29457 36.5316 3.2208 38.6222C2 41 2 44.1111 2 50.3333Z"
@@ -270,7 +280,7 @@
                         quaerat voluptas, facilis cumque tempore provident perspiciatis
                         corporis?.</p>
                 </div>
-                <div class="program-item">
+                <div class="program-item" data-aos="fade-up" data-aos-delay="900" data-aos-once="true">
                     <svg xmlns="http://www.w3.org/2000/svg" width="62" height="56" viewBox="0 0 62 56" fill="none">
                         <path
                             d="M15.5 22.3935H21.7C22.5222 22.3935 23.3107 22.0986 23.892 21.5736C24.4734 21.0487 24.8 20.3367 24.8 19.5943C24.8 18.8519 24.4734 18.1399 23.892 17.615C23.3107 17.09 22.5222 16.7951 21.7 16.7951H15.5C14.6778 16.7951 13.8893 17.09 13.308 17.615C12.7266 18.1399 12.4 18.8519 12.4 19.5943C12.4 20.3367 12.7266 21.0487 13.308 21.5736C13.8893 22.0986 14.6778 22.3935 15.5 22.3935ZM58.9 5.59838H34.1V2.79919C34.1 2.0568 33.7734 1.34481 33.192 0.819863C32.6107 0.294914 31.8222 0 31 0C30.1778 0 29.3893 0.294914 28.808 0.819863C28.2266 1.34481 27.9 2.0568 27.9 2.79919V5.59838H3.1C2.27783 5.59838 1.48933 5.89329 0.907969 6.41824C0.326606 6.94319 0 7.65517 0 8.39756V36.3895C0 38.6166 0.979819 40.7526 2.72391 42.3274C4.468 43.9023 6.83349 44.787 9.3 44.787H23.529L16.399 51.1972C16.1084 51.4574 15.8778 51.767 15.7204 52.1081C15.5631 52.4492 15.482 52.8151 15.482 53.1846C15.482 53.5541 15.5631 53.92 15.7204 54.2611C15.8778 54.6022 16.1084 54.9118 16.399 55.172C16.6872 55.4344 17.03 55.6426 17.4078 55.7847C17.7856 55.9268 18.1908 56 18.6 56C19.0092 56 19.4144 55.9268 19.7922 55.7847C20.17 55.6426 20.5128 55.4344 20.801 55.172L27.9 48.7339V53.1846C27.9 53.927 28.2266 54.639 28.808 55.1639C29.3893 55.6889 30.1778 55.9838 31 55.9838C31.8222 55.9838 32.6107 55.6889 33.192 55.1639C33.7734 54.639 34.1 53.927 34.1 53.1846V48.7339L41.199 55.172C41.4872 55.4344 41.83 55.6426 42.2078 55.7847C42.5856 55.9268 42.9908 56 43.4 56C43.8092 56 44.2144 55.9268 44.5922 55.7847C44.97 55.6426 45.3128 55.4344 45.601 55.172C45.8916 54.9118 46.1222 54.6022 46.2796 54.2611C46.4369 53.92 46.518 53.5541 46.518 53.1846C46.518 52.8151 46.4369 52.4492 46.2796 52.1081C46.1222 51.767 45.8916 51.4574 45.601 51.1972L38.471 44.787H52.7C55.1665 44.787 57.532 43.9023 59.2761 42.3274C61.0202 40.7526 62 38.6166 62 36.3895V8.39756C62 7.65517 61.6734 6.94319 61.092 6.41824C60.5107 5.89329 59.7222 5.59838 58.9 5.59838ZM55.8 36.3895C55.8 37.1318 55.4734 37.8438 54.892 38.3688C54.3107 38.8937 53.5222 39.1886 52.7 39.1886H9.3C8.47783 39.1886 7.68933 38.8937 7.10797 38.3688C6.52661 37.8438 6.2 37.1318 6.2 36.3895V11.1968H55.8V36.3895ZM15.5 33.5903H34.1C34.9222 33.5903 35.7107 33.2953 36.292 32.7704C36.8734 32.2454 37.2 31.5335 37.2 30.7911C37.2 30.0487 36.8734 29.3367 36.292 28.8117C35.7107 28.2868 34.9222 27.9919 34.1 27.9919H15.5C14.6778 27.9919 13.8893 28.2868 13.308 28.8117C12.7266 29.3367 12.4 30.0487 12.4 30.7911C12.4 31.5335 12.7266 32.2454 13.308 32.7704C13.8893 33.2953 14.6778 33.5903 15.5 33.5903Z"
@@ -281,7 +291,7 @@
                         quaerat voluptas, facilis cumque tempore provident perspiciatis
                         corporis?.</p>
                 </div>
-                <div class="program-item">
+                <div class="program-item" data-aos="fade-up" data-aos-delay="1000" data-aos-once="true">
                     <svg xmlns="http://www.w3.org/2000/svg" width="65" height="56" viewBox="0 0 65 56" fill="none">
                         <path
                             d="M62 33.9524V18.4762L32.5 3L3 18.4762L32.5 33.9524L47.84 26.8095V43.4762C47.84 48.2381 40.76 53 32.5 53C24.24 53 17.16 48.2381 17.16 43.4762V26.8095"
@@ -485,7 +495,7 @@
     <!-- FOOTER END-->
     <!-- SCRIPT -->
     <script src="assets/script.js"></script>
-    <!-- Swiper JS -->
+    <!--? Swiper JS Script-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
@@ -540,6 +550,11 @@
                 },
             },
         });
+    </script>
+    <!-- ? AOS Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 

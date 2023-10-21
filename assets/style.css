@@ -20,6 +20,10 @@
 html {
       background-color: var(--gray);
       scroll-behavior: smooth;
+      scroll-padding-top: 5em;
+}
+body{
+      overflow-x: hidden;
 }
 .container {
       width: 85%;
@@ -520,9 +524,6 @@ footer {
       }
       .nav {
             width: 95%;
-      }
-      .title h1 {
-            font-size: 200%;
       }
       .des img {
             width: 80%;
