@@ -415,6 +415,7 @@ footer {
 .mapel {
       width: 100%;
       padding: 25px 0;
+      overflow-x: hidden;
 }
 
 
