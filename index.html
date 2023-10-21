@@ -32,7 +32,7 @@
     <!-- NAVBAR -->
     <header>
         <div class="container">
-            <div class="nav">
+            <div class="nav transparant">
                 <a href="#">
                     <div class="nav-logo">
                         <img src="https://s3-alpha-sig.figma.com/img/77be/4974/66243624295027cac6fc6e15e8a53ef6?Expires=1698624000&Signature=OJqIWCBpV8rbCXkHJyPlGmLCz1gAVGo7TpGHfiVLLU-PE-dwKGerODIyNAHITpYyCAvzmGKwVQ7RlaDQ2udG3DAahhWl3TdnXTlr23upgyo6dNWGz7hny~lkSleYG8rcnlmaps37Op58WeXTRp3oUKHmeWbt6IisXZsTPG8G6yN5E3LbXTgKzP75uYHN00U3cNI3XDkHgx1oFo4JyRTewHJmWHBBtV1sh4VLrD953zs5~oorGxoC9f3RspcFmEo9~~GzYP7NoGWXL-SqbZUPQfo0~iIw13ZqJQFiWXIvDnKF40pYupkM8YsfylfH80LM-7TizGguMA~B-6wfbpoT1A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
@@ -105,16 +105,15 @@
         </div>
     </section>
     <!-- HOME END -->
-    <!-- TENTANG KAMI -->
-    <section class="about" id="about">
+    <!-- BERANDA -->
+    <section class="beranda" id="beranda">
         <div class="container">
             <div class="center-title" data-aos="fade-right" data-aos-delay="500" data-aos-once="true">
-                <hr style="border: 2.5px var(--blue) solid; max-width: 100px; min-width: 70px;">
-                <h1>TENTANG <span
-                        style="background-color: var(--blue);color: var(--gray); padding: 0px 6px;">KAMI</span></h1>
-
+                <hr style="border: 2.5px var(--gray) solid; max-width: 100px; min-width: 70px;">
+                <h1 style="color: var(--blueGray);">Beranda</h1>
             </div>
-            <div class="des" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="500" data-aos-easing="ease-in-out"data-aos-once="true">
+            <div class="des" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="500"
+                data-aos-easing="ease-in-out" data-aos-once="true">
                 <p>&emsp;&emsp; Ibnu Abbas merupakan salah satu sekolah menengah yang berada di Malang, provinsi Jawa
                     Timur. Adapun Nomor
                     pokok sekolah nasional (NPSN) untuk IBNU ABBAS ini adalah 20570899.
@@ -126,6 +125,38 @@
                     mungkin bagi murid dan siswa.</p>
                 <img src="https://s3-alpha-sig.figma.com/img/e080/cbb4/7ea53606e66cd0b5e0cfccc2c79d35e1?Expires=1698624000&Signature=MoUTxfjTdIiD-4hir~ItufZFS6QEscD0D1jvE4BiT4PWCKksaDyR2xyERt1RpBNlig2Ha9PwxmDjS5Vzs7HEqMzqgPmQN1RNExeNSGpCqmGLynNm2DcyGeVYAaCFppMjp80tm1iGxLx4ipEmXC9Bw9W37~DgtPevioFqLHJoZ1Zc-Kh2aRTvbIB09pUWw-UaDqbbmMipZGySIH6Ua7J3ESWRBTjNd6pC5iKAjz9zX9b-G-raFRGUJ4vrz58oUcPtsEVBbgn6lHV28wOk0wf-czf-HWk37LpHNNTNNw9lntxW4wcFjJH48t72ESNtCJrMZ3Fs1nFEGlyG19QAeSe9mw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
                     alt="">
+            </div>
+        </div>
+    </section>
+    <!-- BERANDA END-->
+    <!-- TENTANG KAMI -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="center-title" data-aos="fade-right" data-aos-delay="500" data-aos-once="true">
+                <hr style="border: 2.5px var(--blue) solid; max-width: 100px; min-width: 70px;">
+                <h1>TENTANG <span
+                        style="background-color: var(--blue);color: var(--gray); padding: 0px 6px;">KAMI</span></h1>
+
+            </div>
+            <div class="about-grid-wrapper ">
+                <div>
+                    <i class="fa-duotone fa-rectangles-mixed fa-10x"></i>
+                    <div>
+                        <h1 class="fa-solid fa-4x">visi</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut odio, tenetur provident quos
+                            impedit sint magni ipsum cumque ipsam inventore consequatur ratione tempore ad reiciendis.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h1 class="fa-solid fa-4x">misi</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut odio, tenetur provident quos
+                            impedit sint magni ipsum cumque ipsam inventore consequatur ratione tempore ad reiciendis.
+                        </p>
+                    </div>
+                    <i class="fa-duotone fa-diagram-subtask fa-10x"></i>
+                </div>
             </div>
         </div>
     </section>
@@ -555,6 +586,34 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <!--? JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function () {
+            $(window).bind('scroll', function () {
+                var gap = 10;
+                if ($(window).scrollTop() > gap) {
+                    $('.nav').removeClass('transparant');
+                }
+                else {
+                    $('.nav').addClass('transparant');
+                }
+            })
+            if (MediaDevices.width = 1100) {
+                $(window).bind('scroll', function () {
+                    var gap = 10;
+                    if ($(window).scrollTop() > gap) {
+                        $('.nav').removeClass('transparant');
+                    }
+                    else {
+                        $('.nav').removeClass('transparant');
+                    }
+                })
+            }
+        })
     </script>
 </body>
 
