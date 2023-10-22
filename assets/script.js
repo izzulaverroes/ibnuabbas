@@ -1,5 +1,7 @@
 const burgerButton = document.querySelector('.burger input');
 const burgerBody = document.querySelector('nav ul')
+const Body = document.body; 
+const themeButton = document.querySelector('[color-theme-toggle]');
 
 burgerButton.addEventListener('click', function () {
   burgerBody.classList.toggle('active')
@@ -17,6 +19,7 @@ document.addEventListener('click', function (e) {
     document.querySelector('.burger span:nth-child(4)').classList.remove('x3')
   }
 })
+
 // Count Animation
 let valueDisplays = document.querySelectorAll(".num");
 let interval = 90000;
@@ -34,3 +37,81 @@ valueDisplays.forEach((valueDisplay) => {
   }, duration);
 });
 
+// Swiper JS
+import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1100: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    1120: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+    },
+  },
+});
+var swiper2 = new Swiper(".mySwiper2", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1100: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+    1120: {
+      slidesPerView: 4,
+      spaceBetween: 50,
+    },
+  },
+});
+
+//JQuery JS 
+$(document).ready(function () {
+  $(window).bind('scroll', function () {
+    var gap = 10;
+    if ($(window).scrollTop() > gap) {
+      $('.nav').removeClass('transparant');
+    }
+    else {
+      $('.nav').addClass('transparant');
+    }
+  })
+})
+
+// Dark theme
+const darkToggle = document.querySelector('.dark-button span')
+
+darkToggle.addEventListener('click',()=>{
+  Body.classList.toggle('dark-theme')
+})
+
+darkToggle.addEventListener('click',()=>{
+  darkToggle.classList.toggle('dark-active')
+})
