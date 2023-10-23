@@ -95,12 +95,14 @@ var swiper2 = new Swiper(".mySwiper2", {
 //JQuery JS 
 $(document).ready(function () {
   $(window).bind('scroll', function () {
-    var gap = 10;
+    var gap = 0;
     if ($(window).scrollTop() > gap) {
       $('.nav').removeClass('transparant');
     }
     else {
       $('.nav').addClass('transparant');
+      // Fixing nav actived link
+      $('nav ul li:nth-child(1) a').addClass('link-active')
     }
   })
 })
@@ -115,3 +117,24 @@ darkToggle.addEventListener('click',()=>{
 darkToggle.addEventListener('click',()=>{
   darkToggle.classList.toggle('dark-active')
 })
+
+// Nav link active on scroll
+window.addEventListener("scroll", function() {
+  let sections = document.querySelectorAll("section");
+  let navLinks = document.querySelectorAll("nav ul li a[data-target]");
+
+  sections.forEach(function(section) {
+    let top = section.offsetTop;
+    let bottom = top + section.offsetHeight;
+
+    if (window.pageYOffset >= top && window.pageYOffset < bottom) {
+      navLinks.forEach(function(link) {
+        if (link.getAttribute("data-target") === section.id) {
+          link.classList.add("link-active");
+        } else {
+          link.classList.remove("link-active");
+        }
+      });
+    }
+  });
+});

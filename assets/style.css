@@ -348,6 +348,7 @@ max-height: 200vh; */
 	width: 300px;
 	margin: 25px;
 	box-shadow: 4px 4px 9px 0px #00000040;
+	color: var(--darktext);
 }
 
 .contact {
@@ -375,6 +376,7 @@ max-height: 200vh; */
 	margin: auto;
 	transition: var(--transition);
 	box-shadow: 4px 4px 9px 0px #00000040;
+	background-color: var(--gray);
 }
 .contact-grid form textarea {
 	width: 90%;
@@ -384,11 +386,13 @@ max-height: 200vh; */
 	border-radius: 10px;
 	margin: auto;
 	transition: var(--transition);
+		background-color: var(--gray);
 }
 .contact-grid form button {
 	width: 200px;
 	height: 40px;
 	margin: auto;
+	margin-top: 30px;
 	border-radius: 10px;
 	background-color: var(--blue);
 	border-style: none;
@@ -398,6 +402,7 @@ max-height: 200vh; */
 }
 .contact-grid form button:hover {
 	background-color: var(--darkBlue);
+	color: var(--dark);
 	transform: scale(1.02);
 }
 .contact-grid form button:active {
@@ -485,6 +490,7 @@ footer {
 	height: 100%;
 	padding: 10px;
 	cursor: grab;
+	color: var(--darktext);
 }
 @media screen and (max-width: 1200px) {
 	.burger {
@@ -606,6 +612,9 @@ footer {
 		font-size: 200%;
 	}
 }
+.link-active{
+	color: var(--blueGray);
+}
 .transparant {
 	background-color: #00000000 !important;
 	box-shadow: none;
@@ -619,7 +628,14 @@ footer {
 	--dark: #bdbdbd;
 	--darktext: #dfdfdf;
 }
-
+.o{
+	--blue: #19a7ce;
+	--blueGray: #afd3e2;
+	--darkBlue: #146c94;
+	--gray: #f6f1f1;
+	--dark: #3c3c3c;
+	--darktext: #1c1c1c;
+}
 .dark-button {
 	display: block;
 	width: 50px;
