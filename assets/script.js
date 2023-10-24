@@ -1,6 +1,6 @@
 const burgerButton = document.querySelector('.burger input');
 const burgerBody = document.querySelector('nav ul')
-const Body = document.body; 
+const Body = document.body;
 const themeButton = document.querySelector('[color-theme-toggle]');
 
 burgerButton.addEventListener('click', function () {
@@ -42,12 +42,13 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 10,
+  loop: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
   autoplay: {
-    delay: 3500,
+    delay: 3000,
     disableOnInteraction: false,
   },
   breakpoints: {
@@ -68,12 +69,13 @@ var swiper = new Swiper(".mySwiper", {
 var swiper2 = new Swiper(".mySwiper2", {
   slidesPerView: 1,
   spaceBetween: 10,
+  loop: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
   autoplay: {
-    delay: 3500,
+    delay: 3000,
     disableOnInteraction: false,
   },
   breakpoints: {
@@ -92,43 +94,58 @@ var swiper2 = new Swiper(".mySwiper2", {
   },
 });
 
-//JQuery JS 
-$(document).ready(function () {
-  $(window).bind('scroll', function () {
+document.addEventListener('DOMContentLoaded', function () {
+  window.addEventListener('scroll', function () {
     var gap = 0;
-    if ($(window).scrollTop() > gap) {
-      $('.nav').removeClass('transparant');
-    }
-    else {
-      $('.nav').addClass('transparant');
+    if (window.pageYOffset > gap) {
+      document.querySelector('.nav').classList.remove('transparant');
+    } else {
+      document.querySelector('.nav').classList.add('transparant');
       // Fixing nav actived link
-      $('nav ul li:nth-child(1) a').addClass('link-active')
+      document.querySelector('nav ul li:nth-child(1) a').classList.add('link-active');
     }
-  })
-})
+  });
+});
 
-// Dark theme
+// Switch theme
 const darkToggle = document.querySelector('.dark-button span')
+darkToggle.addEventListener('click', function switchTheme() {
+  var setTheme = document.body;
 
-darkToggle.addEventListener('click',()=>{
-  Body.classList.toggle('dark-theme')
-})
+  setTheme.classList.toggle('dark-theme');
 
-darkToggle.addEventListener('click',()=>{
-  darkToggle.classList.toggle('dark-active')
-})
+  var theme;
+  darkToggle.classList.toggle('dark-active');
+  if (setTheme.classList.contains('dark-theme')) {
+    theme = "Switched"
+  }else{
+    theme = "Normal"
+  }
+  console.log(theme)
+
+  localStorage.setItem("pageTheme", JSON.stringify(theme))
+});
+
+let getTheme = JSON.parse(localStorage.getItem("pageTheme"));
+console.log(getTheme)
+
+if (getTheme === "Switched") {
+  Body.classList = "dark-theme";
+  darkToggle.classList = "dark-active"
+};
+
 
 // Nav link active on scroll
-window.addEventListener("scroll", function() {
+window.addEventListener("scroll", function () {
   let sections = document.querySelectorAll("section");
   let navLinks = document.querySelectorAll("nav ul li a[data-target]");
 
-  sections.forEach(function(section) {
+  sections.forEach(function (section) {
     let top = section.offsetTop;
     let bottom = top + section.offsetHeight;
 
     if (window.pageYOffset >= top && window.pageYOffset < bottom) {
-      navLinks.forEach(function(link) {
+      navLinks.forEach(function (link) {
         if (link.getAttribute("data-target") === section.id) {
           link.classList.add("link-active");
         } else {
@@ -138,3 +155,13 @@ window.addEventListener("scroll", function() {
     }
   });
 });
+
+
+// Loading
+window.addEventListener('load', () => {
+  document.querySelector('.loader').classList.add('loader--hidden');
+
+  document.querySelector('.loader').addEventListener('transitionend', () => {
+    document.body.remove(document.querySelector('.loader'));
+  })
+})

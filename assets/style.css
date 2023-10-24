@@ -25,6 +25,35 @@ html {
 body {
 	overflow-x: hidden;
 }
+.loader{
+	width: 100%;
+	height: 100vh;
+	background-color: var(--gray);
+	display: flex;
+	z-index: 1000000;
+	position: fixed;
+	justify-content: center;
+	align-items: center;
+}
+.loader::after{
+	content: '';
+	display: block;
+	display: flex;
+	width: 6vw;
+	height: 6vw;
+	border: var(--blueGray) 2vw solid;
+	border-radius: 100%;
+	border-top-color: var(--blue);
+	animation: loading 1s ease infinite ;
+}
+.loader--hidden{
+	opacity: 0;
+	visibility: hidden;
+}
+@keyframes loading{
+	from{transform: rotate(0turn)}
+	to{transform: rotate(1turn)}
+}
 .container {
 	width: 85%;
 	margin: auto;
@@ -38,7 +67,7 @@ body {
 	display: flex;
 	background-color: var(--blue);
 	border-radius: 0 0 30px 30px;
-	padding: 10px 40px;
+	padding: 20px 40px;
 	justify-content: space-between;
 	align-items: center;
 	font-size: 18px;
@@ -182,12 +211,23 @@ nav ul li a:hover {
 	height: 100vh;
 	display: flex;
 }
+.home .container{
+display: flex;
+flex-direction: column;
+}
+.woi{
+	width: 10vw;
+	height: 10vw;
+	bottom: -1.2vw;
+	position: relative;
+}
 .title {
 	margin: auto;
 	margin-top: 50px;
+	display: inline-block;
 }
 .title h1 {
-	font-size: 8vw;
+	font-size: 7vw;
 	color: var(--gray);
 }
 .cta {
@@ -683,12 +723,12 @@ footer {
 }
 
 .dark-theme {
-	--blue: #005269;
-	--blueGray: #6b6b6b;
-	--darkBlue: #92b8ca;
-	--gray: #4d4a4a;
-	--dark: #bdbdbd;
-	--darktext: #dfdfdf;
+	--blue: #e74dd0;
+	--blueGray: #E2AFDA;
+	--darkBlue: #8a387d;
+	--gray: #f6f1f1;
+	--dark: #3c3c3c;
+	--darktext: #1c1c1c;
 }
 .o{
 	--blue: #19a7ce;
