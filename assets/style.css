@@ -566,7 +566,12 @@ footer {
 	.contact-grid form {
 		order: 2;
 	}
-
+	.ustd-box div:nth-child(2) img {
+		height: 300px;
+	}
+	.ustd-title h1{
+		font-size: 90%;
+	}
 	.sosmed ul {
 		gap: 4vw;
 	}
@@ -610,6 +615,9 @@ footer {
 	}
 	.about-grid-wrapper h1 {
 		font-size: 200%;
+	}
+	.ustd-title h1{
+		font-size: 140%;
 	}
 }
 .link-active{
