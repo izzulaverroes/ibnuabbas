@@ -20,7 +20,6 @@
 html {
 	background-color: var(--gray);
 	scroll-behavior: smooth;
-	scroll-padding-top: 5em;
 }
 body {
 	overflow-x: hidden;
@@ -34,17 +33,19 @@ body {
 	position: fixed;
 	justify-content: center;
 	align-items: center;
+	transition: all .7s ease;
 }
 .loader::after{
 	content: '';
 	display: block;
 	display: flex;
-	width: 6vw;
-	height: 6vw;
+	width: 5vw;
+	height: 5vw;
 	border: var(--blueGray) 2vw solid;
 	border-radius: 100%;
 	border-top-color: var(--blue);
-	animation: loading 1s ease infinite ;
+	animation: loading .8s linear infinite ;
+	transition: all .4s linear;
 }
 .loader--hidden{
 	opacity: 0;
@@ -149,7 +150,7 @@ nav ul li a:hover {
 .beranda {
 	background-color: var(--darkBlue);
 	color: var(--blueGray);
-	padding: 60px 0;
+	padding: 100px 0;
 }
 
 .about-grid-wrapper {
@@ -287,7 +288,7 @@ flex-direction: column;
 	min-width: 230px;
 }
 .about {
-	padding: 8vw 0;
+	padding: 7vw 0;
 	scroll-padding-top: 4em;
 	background-color: var(--gray);
 }
@@ -372,6 +373,7 @@ max-height: 200vh; */
 }
 .program {
 	background-color: var(--blue);
+	padding: 40px 0;
 }
 
 .program-grid {

@@ -94,6 +94,7 @@ var swiper2 = new Swiper(".mySwiper2", {
   },
 });
 
+// Transparent nav
 document.addEventListener('DOMContentLoaded', function () {
   window.addEventListener('scroll', function () {
     var gap = 0;
@@ -141,7 +142,7 @@ window.addEventListener("scroll", function () {
   let navLinks = document.querySelectorAll("nav ul li a[data-target]");
 
   sections.forEach(function (section) {
-    let top = section.offsetTop;
+    let top = section.offsetTop - 20;
     let bottom = top + section.offsetHeight;
 
     if (window.pageYOffset >= top && window.pageYOffset < bottom) {
@@ -162,6 +163,6 @@ window.addEventListener('load', () => {
   document.querySelector('.loader').classList.add('loader--hidden');
 
   document.querySelector('.loader').addEventListener('transitionend', () => {
-    document.body.remove(document.querySelector('.loader'));
+    document.body.removeChild(document.querySelector('.loader'))
   })
 })
